@@ -1,0 +1,1 @@
+ml hinput.txt.out.asm /link /SUBSYSTEM:CONSOLE /OUT:hinput.txt.out.exe

@@ -1,0 +1,60 @@
+string function flen()
+{
+  integer create c;
+  rback "\nreturned from FLEN";
+}
+
+string function fstr (string b)
+{
+  integer create g = 0hffffff;
+  rback b;
+}
+
+char function fch()
+{
+    rback 'f';
+}
+
+integer function math(integer x, integer y)
+{
+  integer create z;
+  z = x+y;
+  rback z;
+}
+
+main
+{
+ char create ch1 = fch();
+ string create str = "Hello!?:<>{}()=.-+*,; %#World";
+ integer create len = strlen(str);
+ integer create x = 5;
+ string create sh = flen();
+ integer create y = rand(1, 1000);
+ integer create yy = rand();
+ wout(sh);
+ wout("\nch1 = "); wout(ch1);
+ wout("\nstr = "); wout(str); wout("\n");
+ wout("\nstr len = "); wout(len); wout("\n");
+ wout("\nDRandom y = "); wout(y);
+ wout("\nRandom yy = "); wout(yy); wout("\n");
+ x = math(64,x);
+ wout("\nmath x = "); wout(x); 
+ wout("\n");
+ x = x < 5;
+ y = 7;
+ wout("\nx = ");
+ wout(x);
+ wout("\n");
+ wout("Loop Is Coming\n");
+ loop(5)
+ {
+ y = y < 1;
+ wout("y = "); wout(y); wout("\n");
+ }
+ wout("Loop Ended\n");
+ sh = fstr("almost end...");
+ wout("\nggwp\n");
+ wout(sh);
+ wout("\n");
+ wout("\n/END/\n");
+}
